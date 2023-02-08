@@ -1,0 +1,30 @@
+body
+{
+    margin: auto;
+    padding: 0%;
+    /* background-color: black; */
+    display: grid;
+    grid-template-areas:
+    "Sidebar  Header Header Header"
+    "Sidebar  Content Content Content"
+    "Footer  Footer Footer Footer"
+}
+.header
+{
+    grid-area: Header;
+}
+.sidebar
+{
+    background-color: violet;
+    grid-area: Sidebar;
+}
+.content
+{
+    background-color: aquamarine;
+    grid-area: Content;
+}
+.footer
+{
+    background-color: yellow;
+    grid-area: Footer;
+}
