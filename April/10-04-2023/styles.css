@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+*
+{
+    box-sizing: border-box;
+    font-family: 'Silkscreen',cursive;
+
+}
+body
+{
+    padding: none;
+    margin: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Contain
+{
+    background: rgb(186,111,255);
+    background: linear-gradient(47deg, rgba(186,111,255,1) 0%, rgba(81,121,255,1) 100%);
+
+}
+.Contain .Btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
