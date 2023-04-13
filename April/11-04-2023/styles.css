@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+*
+{
+    padding: 0;
+    margin: 0%;
+    font-family: 'Silkscreen', cursive;
+}
+.Container
+{
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+}
