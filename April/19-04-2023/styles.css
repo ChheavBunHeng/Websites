@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+nav
+{
+    font-family: 'silkscreen',cursive;
+
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a 
+{
+    text-decoration: none;
+
+}
+nav input
+{
+    color:black;
+    background: none;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 150px;
+    transition: 0.5s all ease-in-out;
+    outline: none;
+}
+nav input:focus
+{
+    width: 200px;
+    outline: none;
+
+}
+div 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section
+{
+    min-height: 100vh;
+    
+}
+.Part2 h1
+{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    
+}
+
+.hidden
+{
+    opacity: 0;
+    transition: 1s all ease;
+    filter: blur(5px);
+
+    
+}
+
+.show
+{
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateX(0%);
+}
