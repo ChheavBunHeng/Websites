@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'silkscreen',cursive;
+}
+header ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a
+{
+    text-decoration: none;
+    font-size:x-large;
+}
+section
+{
+    display: grid;
+    place-content: center;
+}
+.hidden
+{
+
+    transition: all 0.5s;
+    opacity: 0;
+}
+.show
+{
+    transition: all 0.5s;
+    opacity: 1;
+}
