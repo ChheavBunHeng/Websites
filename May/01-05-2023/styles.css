@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&family=Vina+Sans&display=swap');
+
+body {
+    display: flex;
+    justify-content: center; /* centers content horizontally */
+    align-items: center; /* centers content vertically */
+    height: 100vh; /* sets the body height to the full viewport height */
+    font-family: 'silkscreen',cursive;
+  }
+.SeachBox
+{
+    background: rgb(34,193,195);
+    background: linear-gradient(24deg, rgba(34,193,195,1) 0%, rgba(236,157,255,1) 100%);
+    justify-content: center;
+    align-items: center;
+
+}
+p
+{
+    display: flex;
+    justify-content: center;
+}
+.BTN
+{
+    width: 100px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.BTN:hover
+{
+    /* background: rgb(34,193,195);
+    background: linear-gradient(24deg, rgba(34,193,195,1) 0%, rgba(236,157,255,1) 100%); */
+    transition: 0.5s ease;
+    animation: EaseIN-OUT 0.5s infinite;
+}
+@keyframes EaseIN-OUT {
+    0%{background-color: wheat;}
+    50%  {background-color: yellow;}
+    100% {background-color: blue;}
+}
+.SearchCity
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+    
+}
+.SearchCity:focus
+{
+    width: 500px;
+    height: 50px;
+}
