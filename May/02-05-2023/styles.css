@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&family=Vina+Sans&display=swap');
+
+body {
+    display: flex;
+    justify-content: center; /* centers content horizontally */
+    align-items: center; /* centers content vertically */
+    font-family: 'silkscreen',cursive;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/007/759/345/non_2x/sunrise-or-sunset-flat-landscape-illustration-free-vector.jpg")
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container
+{
+    place-content: center;
+    
+    
+}
+.SearchBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    transition: height 0.3s ease; /* add a transition to animate height changes */
+    font-size: xx-large;
+  }
+  
+.hidden
+{
+
+    opacity: 0;
+    transition: 0.3s ease;
+    animation: slideOut 1s forwards;
+
+}
+.show
+{
+    background-color: aquamarine;
+    opacity: 1;
+    transition: 0.3s ease;
+    animation: slideIn 1s forwards;
+}
+@keyframes slideIn {
+    from {
+      transform: translateY(50%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+@keyframes slideOut {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(50%);
+  }
+}
