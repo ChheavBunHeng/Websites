@@ -1,0 +1,40 @@
+.Container {
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    place-content: center;
+}
+  
+
+  .H1 {
+      animation: LetterAnimation1 1s forwards;
+    }
+    
+    .H2 {
+        
+        animation: LetterAnimation2 1s forwards;
+    }
+    
+    @keyframes LetterAnimation1 {
+        0% {
+            font-size: 100px;
+            transform: translateX(50%);
+        }
+        100% {
+            font-size: 50px;
+            transform: translateX(-500px);
+        }
+    }
+    
+    @keyframes LetterAnimation2 {
+    0% {
+        font-size: 100px;
+        transform: translateX(50%);
+    }
+    100% {
+        font-size: 50px;
+        
+        transform: translateX(100%);
+    }
+  }
+  

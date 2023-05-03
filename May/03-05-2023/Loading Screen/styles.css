@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    
+}
+.loader
+{
+    background-color: white;
+    width: 50vw;
+    height: 10px;
+    min-width: 80vw;
+}
