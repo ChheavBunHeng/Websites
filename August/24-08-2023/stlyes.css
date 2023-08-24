@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Silkscreen:wght@700&family=Vina+Sans&display=swap');
+body
+{
+    /* overflow: none; */
+    font-family: 'Silkscreen', cursive;
+}
+section
+{
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 50px;
+    /* animation: SlideShow 1s ease; */
+
+}
+div img
+{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.Text_Styles
+{
+    
+}
+div button, nav button
+{   
+    margin-top: 20px;
+    font-family: 'silkscreen', cursive;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    transition: 0.3s ease-in-out;
+}
+div button:hover
+{
+    transform: translate(0px,-20px);
+    box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.75);
+}
+div
+{
+    padding: 20px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.2s;
+    
+}
+div:hover
+{
+    background-color: antiquewhite;
+    transform: scale(1.2); /* Scale up the card on hover */
+    
+    backdrop-filter: blur(5px); /* Apply background blur */
+
+
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img
+{
+    width: 50px;
+    height: 50px;
+    object-fit: cover; 
+    border-radius: 20px;
+    vertical-align: middle;
+
+}
+
+@keyframes SlideShow {
+    from
+    {
+        opacity: 0;
+        transform: translateY(100%);
+        /* transform:rotate(-15deg) */
+        filter: blur(10px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0%);
+        /* transform:rotate(0deg) */
+        filter: blur(0px);
+
+
+
+    }
+}
+.hidden
+{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
+
