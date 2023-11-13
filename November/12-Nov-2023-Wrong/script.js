@@ -7,4 +7,4 @@ const fandI = (url, targetClass) => {
 
 document.addEventListener("DOMContentLoaded",(){
     fandI("./header.html","header");
-});
+}); 
