@@ -1,0 +1,11 @@
+nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a
+{
+    font-size: xx-large;
+    transition: 0.5s all ease;
+}
