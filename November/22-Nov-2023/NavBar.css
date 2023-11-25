@@ -1,0 +1,18 @@
+.NavBar
+{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
+.NavBar a
+{
+    padding-top: 10px;
+    text-decoration: none;
+    transition: 0.5s ease all;
+}
+.NavBar a:hover
+{
+    font-size: xx-large;
+}
