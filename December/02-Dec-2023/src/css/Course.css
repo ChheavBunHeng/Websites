@@ -1,0 +1,28 @@
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info .accordion
+{
+    width: 90vw;
+}
+.info .panel
+{
+    display: none;
+    width: 90vw;
+    background-color: azure;
+    border: 1px solid black;
+}
