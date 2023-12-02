@@ -17,7 +17,17 @@
 }
 .info .accordion
 {
+    font-size: large;
+    font-family: 'silkscreen',cursive;
+    font-weight: bolder;
     width: 90vw;
+    height: 3vh;
+    transition: 0.5s ease;
+}
+.info .accordion:hover
+{
+    background-color: black;
+    color: white
 }
 .info .panel
 {
