@@ -1,0 +1,55 @@
+.Signup_Page
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+h1
+{
+    font-family: 'silkscreen',cursive;
+    font-size: xxx-large;
+}
+/* Input */
+.Signup_Name input, .Signup_Number input, .Signup_Email input, .Signup_Password input
+{
+    height: 50px;
+    font-size: x-large;
+    font-family: 'silkscreen',cursive;
+    width: 800px;
+}
+
+.Signup_Name input
+{
+    width: 395px;
+}
+
+/* Button and Selector*/
+.RegisterBTN,.Location select
+{
+    height: 50px;
+    font-size: x-large;
+    font-family: 'silkscreen',cursive;
+    width: 810px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px)
+{
+    .Signup_Page
+    {
+        background-color: gray;
+    }
+    h1
+    {
+        font-size: xxx-large;
+    }
+    .Signup_Name input, .Signup_Number input, .Signup_Email input, .Signup_Password input,.RegisterBTN,.Location select
+{
+    height: 25px;
+    font-size: x-large;
+    font-family: 'silkscreen',cursive;
+    width: 280px;
+}
+}

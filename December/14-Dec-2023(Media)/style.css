@@ -1,0 +1,23 @@
+.C
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all ease;
+}
+.C h1
+{
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .C
+    {
+        flex-direction: column;
+    }
+    .C h1
+{
+    font-size: 1rem;
+}
+    
+}
