@@ -1,0 +1,53 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Silkscreen',cursive;
+    overflow-x: hidden;
+}
+#Navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+}
+#Navbar ul
+{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#container
+{
+    display: grid;
+    place-items: center;
+}
+#container #subContainer-1 
+{
+    background-color: black;
+    color: white;
+    height: 50vh;
+    width: 100vw;
+}
+#container div
+{
+    height: 50vh;
+    width: 100vw;
+}
+.hidden
+{
+    opacity: 0;
+    transition: 0.5s ease;
+    filter: blur(30px);
+    transform: translate(-100%);
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0%);
+
+}
