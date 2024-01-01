@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/reservations.js":
+/*!*****************************!*\
+  !*** ./src/reservations.js ***!
+  \*****************************/
+/***/ (() => {
+
+eval("const RegisterBTN = document.querySelector(\".RegisterBTN\");\r\nRegisterBTN.addEventListener(\"click\",()=>{\r\n    console.log(\"Hello world\"); \r\n});\n\n//# sourceURL=webpack://31-dec-2023/./src/reservations.js?");
+
+/***/ }),
+
 /***/ "./src/script.js":
 /*!***********************!*\
   !*** ./src/script.js ***!
@@ -25,8 +35,9 @@ eval("document.addEventListener('DOMContentLoaded', function () {\r\n    // Func
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/script.js"]();
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/reservations.js"]();
 /******/ 	
 /******/ })()
 ;
