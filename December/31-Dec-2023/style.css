@@ -20,6 +20,21 @@ body
     justify-content: space-around;
     align-items: center;
 }
+
+#Navbar ul a
+{
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+#Navbar ul a:hover
+{
+    color: blue;
+    transform: translate(0px,-3px);
+}
+
+
 #container
 {
     display: grid;
