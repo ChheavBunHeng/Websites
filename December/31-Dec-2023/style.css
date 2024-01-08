@@ -25,13 +25,50 @@ body
     display: grid;
     place-items: center;
 }
+
+
+
+/* SubContainer-1 */
 #container #subContainer-1 
 {
     background-color: black;
     color: white;
     height: 50vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+#subContainer-1 img
+{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: 0.3s ease-in-out;
+}
+#subContainer-1 img:hover
+{
+    transform: scale(1.2);
+}
+#subContainer-1 button
+{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    font-family: 'silkscreen',cursive;
+    border: 1px solid black;
+}
+#subContainer-1 button:hover
+{
+    transform: scale(1.2);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+}
+
+
 #container div
 {
     height: 50vh;
