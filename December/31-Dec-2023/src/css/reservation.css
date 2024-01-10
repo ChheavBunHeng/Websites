@@ -1,0 +1,55 @@
+body {
+    font-family: 'silkscreen', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.reservation-info,
+.reservations-form {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.reservation-date
+{
+    gap: 10px;
+    display: flex;
+}
+
+.reservations-form input,
+.reservations-form button {
+    box-sizing: border-box;
+    font-family: 'silkscreen', cursive;
+}
+
+.reservation-info input,.RegisterBTN {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 600px;
+    transition: 0.2s ease;
+}
+.reservation-date input
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 295px;
+}
+
+.RegisterBTN:hover
+{
+    background-color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.RegisterBTN:active
+{
+    background-color: #ccc;
+}
