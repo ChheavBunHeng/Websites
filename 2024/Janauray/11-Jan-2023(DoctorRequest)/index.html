@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Input and Select Option with JavaScript</title>
+  <script>
+    function updateInputFromSelect() {
+      // Get the selected value from the dropdown
+      var selectedValue = document.getElementById("combinedSelect").value;
+      // Set the input field value to the selected value
+      document.getElementById("combinedInput").value = selectedValue;
+    }
+  </script>
+</head>
+<body>
+  <!-- Combined Input and Select Option -->
+  <label for="combinedInput">Enter something or choose an option:</label>
+  <div>
+    <input type="text" id="combinedInput" name="combinedInput" placeholder="Enter something...">
+    <select id="combinedSelect" name="combinedSelect" onchange="updateInputFromSelect()">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
+  </div>
+
+</body>
+</html>

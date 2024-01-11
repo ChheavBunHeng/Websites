@@ -1,0 +1,18 @@
+section
+{
+    display: grid;
+    place-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+
+}
+.hidden
+{
+    opacity: 0;
+    transition: 1s ease;
+}
+.show
+{
+    opacity: 1;
+}

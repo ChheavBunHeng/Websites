@@ -1,0 +1,81 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    font-family: 'silkscreen',cursive;
+}
+.Container
+{
+    border: 2px solid black;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+.Header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.Header .Title, .Date
+{
+    font-family: 'silkscreen',cursive;
+    transition: 0.5s ease;
+}
+.Header .Title
+{
+    width: 50vw;
+    height: 5vh;
+    font-size: large;
+}
+.Header .Date
+{
+    width: 20vw;
+    height: 5vh;
+}
+.Container textarea
+{
+    width: 75vw;
+    height: 60vh;
+    padding: 10px;
+}
+.Container button:hover
+{
+    animation: BitEffect 1s infinite;
+}
+.Container button
+{
+    width: 10vw;    
+    height: 5vh;    
+    font-size: large;
+    font-family: 'silkscreen',cursive;
+    transition: 0.5s ease;
+    background-color: transparent;
+    
+}
+.Container button:focus
+{
+    animation: none;
+    color: white;
+    background-color: black;
+}
+@keyframes BitEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

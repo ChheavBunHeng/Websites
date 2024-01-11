@@ -1,0 +1,64 @@
+body
+{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 700px;
+
+}
+div input, button,ul
+{
+    font-family: 'silkscreen',cursive;
+    transition: 0.5s ease;
+    font-size: xx-large;
+    
+}
+div input
+{
+    text-align: center;
+    width: 400px;
+    height: 50px;
+}
+div input:focus
+{
+    width: 700px;
+    border: 1px solid black;
+    outline: none;
+}
+div button
+{
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+}
+div button:hover
+{
+    background-color: rgb(255, 255, 255);
+    animation: BorderExpand 1s infinite;
+}
+div button:focus
+{
+    background-color: black;
+    color: white;
+}
+@keyframes BorderExpand {
+    0% {
+        border: 1px solid black;
+    }
+    50% {
+        border: 7px solid black;
+    }
+    100% {
+        border: 3px solid black;
+    }
+}
