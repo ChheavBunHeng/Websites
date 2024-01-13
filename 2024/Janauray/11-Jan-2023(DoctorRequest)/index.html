@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Combined Input and Select Option with JavaScript</title>
   <script>
+    //const submitBTN = document.querySelector(".SubmitBTN");
+    //submitBTN.addEventListener("click", ()=>{
+      //console.log("Hello world");
+    //});
     function updateInputFromSelect() {
-      // Get the selected value from the dropdown
       var selectedValue = document.getElementById("combinedSelect").value;
-      // Set the input field value to the selected value
       document.getElementById("combinedInput").value = selectedValue;
     }
   </script>
 </head>
 <body>
-  <!-- Combined Input and Select Option -->
   <label for="combinedInput">Enter something or choose an option:</label>
   <div>
     <input type="text" id="combinedInput" name="combinedInput" placeholder="Enter something...">
@@ -22,8 +23,13 @@
       <option value="option1">Option 1</option>
       <option value="option2">Option 2</option>
       <option value="option3">Option 3</option>
+      <option value="option4">Option 3</option>
+      <option value="option5">Option 3</option>
+      <option value="option6">Option 3</option>
+      <option value="option7">Option 3</option>
+      <option value="option8">Option 3</option>
     </select>
   </div>
-
+  <button class="SubmitBTN">Submit</button>
 </body>
 </html>
