@@ -1,0 +1,11 @@
+.Header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header a{
+    text-decoration: none;
+    font-family: 'silkscreen',cursive;
+}
