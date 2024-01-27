@@ -1,0 +1,17 @@
+.BranchLocation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.BranchLocation iframe
+{
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+}
+.Branch a
+{
+    text-decoration: none;
+}   

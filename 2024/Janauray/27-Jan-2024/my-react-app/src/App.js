@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Location from './components/Location';
+
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Navbar></Navbar>
+      <Location></Location>
       <Footer></Footer>
     </div>
   );
