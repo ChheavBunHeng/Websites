@@ -1,15 +1,15 @@
 import React from 'react';
 // import '../css/Footer.css'; // Replace 'Footer.css' with the actual name of your CSS file
 import '../css/Footer.css'; // Replace 'Footer.css' with the actual name of your CSS file
-
 // import { Link }
+
 const Footer = () => {
   return (
     <div className="footer">
       <div className="QRcode">
         <div className="detail">
           <h1>QR Code</h1>
-          <img src="../Img/CITO.jpg" alt="Cito Qr code" />
+          <img src="" alt="Cito Qr code" />
         </div>
       </div>
       <div className="SocialMedia">
@@ -38,9 +38,9 @@ const Footer = () => {
           <i className="fas fa-envelope">
             <a href="#">Email</a>
           </i>
-          <i className="fas fa-map-marker-alt">
+          {/* <i className="fas fa-map-marker-alt">
             <a href="#">Address</a>
-          </i>
+          </i> */}
         </div>
       </div>
     </div>
