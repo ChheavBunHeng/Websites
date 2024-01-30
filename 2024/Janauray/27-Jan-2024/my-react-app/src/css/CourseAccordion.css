@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bree+Serif&family=Silkscreen:wght@700&family=Urbanist:wght@100;800&display=swap');
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+}
+.Header
+{
+    font-size: large;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'silkscreen',cursive;
+}
+.Header .School-Logo
+{
+    font-size: xx-large;
+}
+.Header nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: x-large;
+}
+.Header a
+{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+.Header a:hover
+{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}
+.contain
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Search
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Search .SearchBar
+{
+    width: 20vw;
+    font-family: 'silkscreen',cursive;
+    font-size: x-large;
+    transition: 0.5s ease;
+    text-align: center;
+
+}
+.Search .SearchBar:focus
+{
+    width: 50vw;
+    border-radius: 0px;
+}
+
+.Accordion
+{
+    display: hidden;
+}
+.Accordion .AccordionBTN
+{
+    width: 100vw;
+    font-family: 'silkscreen',cursive;
+    font-size: x-large;
+}
+.Accordion .panel
+{
+    display: none;
+    width: 100vw;
+    
+}
+.Accordion .panel .panel-info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'silkscreen',cursive;
+    font-size:medium;
+    transition: 0.2s ease;
+}
+.panel-info:hover
+{
+
+}
+.panel-info h4
+{
+
+}
+.panel-info h4:hover
+{
+
+}
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
