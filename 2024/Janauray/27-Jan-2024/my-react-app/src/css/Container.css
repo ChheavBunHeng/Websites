@@ -1,0 +1,53 @@
+.Container {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.Item {
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    transition: 0.3s ease transform;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Item:hover {
+    transform: translate(0px, -5px);
+}
+
+.Item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s ease all;
+}
+
+.Item h1 {
+    font-size: x-large;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item-Info {
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
