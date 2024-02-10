@@ -1,14 +1,8 @@
-.Signup
-{
+.Signup {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 10px;
 }
-.Signup input, select
-{
-    width: 30vw;
-    height: 5vh;
-    font-size: xx-large;
-    font-family: 'silkscreen',cursive;
-}
+
