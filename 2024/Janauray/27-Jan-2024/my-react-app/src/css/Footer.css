@@ -14,32 +14,16 @@
 .detail
 {
     display: flex;
-    justify-content:space-between;
-    align-items: left;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 5px;
     height: 20vh;
 }
-.QRcode img
-{
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    transition: 0.3s ease;
-    margin-left: 35px;
 
-}
-.QRcode img:hover
-{
-
-}
 .detail a
 {
     color: black;
     text-decoration: none;
     margin-left: 10px;
     transition: 0.3s ease;
-    font-size: large;
+    font-size: x-large;
 }
