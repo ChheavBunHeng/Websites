@@ -9,7 +9,6 @@ const Signup = () => {
         <input type="text" className="UserNameEnglish" placeholder="Input english name" />
       </div>
       <div>
-
         <input type="text" className="Nationality" placeholder="Input nationality"/>
         <select name="" id="">
             <option value="Male">Male</option>  
@@ -26,6 +25,7 @@ const Signup = () => {
             <option value="Science">Science</option>
             <option value="Social">Social</option>
         </select>      
+        <button className="Signup">Signup</button>
     </div>
   );
 };
