@@ -1,3 +1,4 @@
+
 .Valentime {
     overflow: hidden;
     width: 100vw;
@@ -7,35 +8,30 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-}
+    font-family: 'silkscreen',cursive;
+    font-weight: bolder;
 
-.BTN {
+}
+.BTN
+{
+    width: auto;
+    display:flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+button
+{
+    font-family: 'silkscreen',cursive;
+    width: 100px;
+    height: auto;
+    font-size: x-large;
+}
+.Hidden
+{
+    display: none;
+}
+.No
+{
+    transition: 0.3s ease;
     position: relative;
-    margin-top: 20px;
-    display: flex;
-    align-items: center; /* Align buttons horizontally */
-}
-
-.YES,
-.NO {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.YES {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    z-index: 1; /* Ensure the YES button is above the NO button */
-}
-
-.NO {
-    background-color: #f44336; /* Red */
-    color: white;
-    position: absolute; /* Position the NO button */
-    left: 0; /* Adjust the initial left position */
-    top: 0; /* Adjust the initial top position */
-    z-index: 0; /* Ensure the NO button is behind the YES button */
-    margin-left: 60px; /* Adjust the margin to separate the buttons */
 }

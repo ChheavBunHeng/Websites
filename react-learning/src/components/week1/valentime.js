@@ -2,31 +2,37 @@ import React, { useRef } from "react";
 import "./valentime.css";
 
 const Valentime = () => {
-    const btnRef = useRef(null);
+    // Eventlistener: MouseOver
+    const NoButtonRef = useRef(null);
 
     const handleMouseOver = () => {
-        const btn = btnRef.current;
-        const maxY = 300;
-        const maxX = 300;
+        const MaxY = 300;
+        const MaxX = 300;
 
-        // Adjust the range to keep the YES button within 100vw by 100vh
-        const randomX = Math.min(Math.max(0, Math.floor(Math.random() * maxX)), maxX);
-        const randomY = Math.min(Math.max(0, Math.floor(Math.random() * maxY)), maxY);
-        
-        btn.style.left = `${randomX}px`;
-        btn.style.top = `${randomY}px`;
+        const x = Math.floor(Math.random() * MaxX);
+        const y = Math.floor(Math.random() * MaxY);
+
+        // Access the button element through the useRef reference
+        if (NoButtonRef.current) {
+            NoButtonRef.current.style.left = `${x}px`;
+            NoButtonRef.current.style.top = `${y}px`;
+        }
     };
+    //EventListener: Click
+    const HandleMouseClick = () =>{
+        NoButtonRef.current.classList.add("Hidden");
+    }
 
     return (
         <div className="Valentime">
-            {/* <h1>Can you be my valentine</h1> */}
+            <h1>Can you be my Valentine</h1>
             <img src="https://i.redd.it/sbxb48jdrct81.jpg" alt="" />
-            <div className="BTN" ref={btnRef}>
-                <button className="YES" onMouseOver={handleMouseOver}>YES</button>
+            <div className="BTN">
+                <button className="Yes">Yes</button>
+                <button className="No" ref={NoButtonRef} onMouseOver={handleMouseOver} onClick={HandleMouseClick}>No</button>
             </div>
-                <button className="NO">NO</button>
         </div>
     );
 };
 
-export default Valentime; 
+export default Valentime;
