@@ -1,9 +1,12 @@
 import React, { useRef } from "react";
 import "./valentime.css";
+import page1 from "../week1/page1";
+import { useHistory } from "react-router-dom";
 
 const Valentime = () => {
-    // Eventlistener: MouseOver
     const NoButtonRef = useRef(null);
+    const YesButtonRef = useRef(null);
+    const history = useHistory();
 
     const handleMouseOver = () => {
         const MaxY = 300;
@@ -12,15 +15,20 @@ const Valentime = () => {
         const x = Math.floor(Math.random() * MaxX);
         const y = Math.floor(Math.random() * MaxY);
 
-        // Access the button element through the useRef reference
         if (NoButtonRef.current) {
             NoButtonRef.current.style.left = `${x}px`;
             NoButtonRef.current.style.top = `${y}px`;
         }
     };
-    //EventListener: Click
-    const HandleMouseClick = () =>{
-        NoButtonRef.current.classList.add("Hidden");
+
+    const HandleMouseClick = () => {
+        if (NoButtonRef.current) {
+            NoButtonRef.current.classList.add("Hidden");
+        }
+    }
+
+    const HandleMouseClickYes = () => {
+        history.push(page1);
     }
 
     return (
@@ -28,7 +36,7 @@ const Valentime = () => {
             <h1>Can you be my Valentine</h1>
             <img src="https://i.redd.it/sbxb48jdrct81.jpg" alt="" />
             <div className="BTN">
-                <button className="Yes">Yes</button>
+                <button className="Yes" ref={YesButtonRef} onClick={HandleMouseClickYes}>Yes</button>
                 <button className="No" ref={NoButtonRef} onMouseOver={handleMouseOver} onClick={HandleMouseClick}>No</button>
             </div>
         </div>
