@@ -1,0 +1,48 @@
+.itemcard
+{
+    font-family: 'silkscreen',cursive;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.ImageSide,.Info
+{
+    width: auto;
+    height: 500px;
+}
+.ImageSide img
+{
+    width: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+.Info
+{
+
+    padding-left: 20px;
+    background-color: azure;
+}
+.Purchase
+{
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+}
+.Material, .Quantity
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Material button
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
