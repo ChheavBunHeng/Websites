@@ -5,10 +5,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Valentime from "./components/week1/valentime";
 // import page1 from "./components/week1/page1";
 // week2
-import Item from "./components/week2/Item";
+// import Item from "./components/week2/Item";
+// Week3
+import MotorSearch from "./components/week3/MotorSearch";
 const App = () => {
     return (
-        <Item></Item>
+        <MotorSearch></MotorSearch>
     );
 };
 

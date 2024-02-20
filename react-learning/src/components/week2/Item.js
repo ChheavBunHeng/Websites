@@ -5,7 +5,7 @@ const Item = () =>{
     const handleIncrease = () =>{
         setQuanlity(Quanlity + 1);
     };
-    const handleDecrease = () =>{
+    const handleDecrease = () =>{   
         if(Quanlity > 1){
             setQuanlity(Quanlity - 1);
         }
