@@ -1,11 +1,16 @@
 // Page1.js
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Valentime from "./valentime";
 
 const Page1 = () => {
     return (
         <div>
-            <h1>This is Page1</h1>
-            {/* Add content for Page1 */}
+            <h2>This is Page 1</h2>
+            <Link to="/valentime">Go to Valentime</Link>
+            <Routes>
+                <Route path="/valentime" element={<Valentime />} />
+            </Routes>
         </div>
     );
 };
