@@ -1,27 +1,14 @@
 // Page1.js
 import React from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import Page2 from "./Page2";
-
-const Navigation = () => {
-    return (
-        <nav>
-            <Link to="/page2">Go to Page 2</Link>
-            <Link to="/">Go to Home</Link>
-        </nav>
-    );
-};
-
+// import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+// import Page2 from "./Page2";
+import Narbar from "./";
 const Page1 = () => {
     return (
-        <BrowserRouter>
-            <div>
-                <Navigation />
-                <Routes>
-                    <Route path="/page2" element={<Page2 />} />
-                </Routes>
-            </div>
-        </BrowserRouter>
+        <div>
+            <h1>Page1</h1>
+            <Navbar></Navbar>
+        </div>
     );
 };
 
