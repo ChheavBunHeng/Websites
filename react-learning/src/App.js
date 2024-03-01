@@ -1,9 +1,9 @@
 // App.js
 import React from "react";
-import Page1 from "./components/week4/Page1";
+import Honda from "./components/week6/Honda";
 const App = () => { 
     return (
-        <Page1></Page1>
+        <Honda></Honda> 
     );
 };
 export default App;
