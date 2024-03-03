@@ -11,5 +11,5 @@
 
 .Name {
     @apply transition-colors duration-300 hover:text-purple-500;
-
+    font-family: "silkscreen",cursive;
 }
