@@ -1,0 +1,14 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.Container {
+    width: 100vw;
+    height: 100vh;
+    @apply flex justify-around bg-blue-400;
+}
+
+.Name {
+    @apply transition-colors duration-300 hover:text-purple-500;
+}
