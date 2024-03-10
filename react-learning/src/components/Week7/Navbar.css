@@ -1,0 +1,40 @@
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    padding: 50px;
+    background-color: rgb(204, 204, 255)
+}
+.BTN
+{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.BTN button
+{
+    width: 100px;
+    height: 50px;
+
+    border: none;
+    background-color: aquamarine;
+}
+.BTN .login
+{
+    background-color: black;
+    color: white;
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+}
+.BTN .Signup
+{
+    border-start-end-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color: white;
+    color: black;
+}
