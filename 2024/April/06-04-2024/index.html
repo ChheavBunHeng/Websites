@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" class="guess">
+    <button class="SubmitBTN">Submit</button>
+    <script>
+        const BTN = document.querySelector(".SubmitBTN");
+        BTN.addEventListener("click", () => {
+            const guessvalue = parseInt(document.querySelector(".guess").value);
+            var randomNum = Math.floor(Math.random() * 3) + 1;
+            console.log(randomNum); 
+            if(guessvalue === randomNum){
+                alert("Congratulations! You guessed correctly.");
+            }
+            else
+            {
+                alert("Oops! Wrong guess. The correct number was " + randomNum + ".");
+            }
+        })
+    </script>
+</body>
+</html>
