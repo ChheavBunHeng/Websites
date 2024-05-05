@@ -1,10 +1,12 @@
 // App.js
 import React from "react";
+import Navbar from "./components/week4/Navbar";
 // import Honda from "./components/week6/Honda";
-import HelloWorld from "./components/Week7/HelloWorld";
 const App = () => { 
     return (
-        <HelloWorld></HelloWorld>
+        <div>
+            <Navbar></Navbar>
+        </div>
     );
 };
 export default App;

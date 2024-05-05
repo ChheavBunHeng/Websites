@@ -1,18 +1,23 @@
 import React from "react";
-import { BrowserRouter, Routes, Route,link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Page1 from "./Page1";
-navbar = () =>{
-    return(
+import Page2 from "./Page2";
+
+const Navbar = () => {
+    return (
         <div>
             <BrowserRouter>
                 <nav>
-                    <link to="/page1">Go to page1</link>
+                    <Link to="/">Home</Link>
+                    <Link to="/page2">Page 2</Link>
                 </nav>
                 <Routes>
-                    <Route path="/page1" element={<Page1/>}/>W
+                    <Route path="/" element={<Page1 />} />
+                    <Route path="/page2" element={<Page2 />} />
                 </Routes>
             </BrowserRouter>
         </div>
-    )
-}
+    );
+};
+
 export default Navbar;
