@@ -1,10 +1,12 @@
-// Page1.js
 import React from "react";
-// import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-// import Page2 from "./Page2";
+import { Link } from "react-router-dom";
+
 const Page1 = () => {
     return (
         <div>
+            <nav>
+                <Link to="/">Home</Link>
+            </nav>
             <h1>Page1</h1>
         </div>
     );
