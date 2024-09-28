@@ -1,9 +1,9 @@
 import React from "react"
-export default function Test()
+export default function Banner()
 {
     return(
         <>
-            <section className="bg-gray-50">
+  <section className="relative bg-[url('https://www.sws.co.jp/resource/img/product/047.png')] bg-cover bg-center">
   <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
     <div className="mx-auto max-w-xl text-center">
       <h1 className="text-3xl font-extrabold sm:text-5xl">
