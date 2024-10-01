@@ -1,39 +1,55 @@
-import React from "react"
-export default function Banner()
-{
-    return(
-        <>
-  <section className="relative bg-[url('https://www.sws.co.jp/resource/img/product/047.png')] bg-cover bg-center">
-  <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-    <div className="mx-auto max-w-xl text-center">
-      <h1 className="text-3xl font-extrabold sm:text-5xl">
-        Understand User Flow.
-        <strong className="font-extrabold text-red-700 sm:block"> Increase Conversion. </strong>
-      </h1>
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-      <p className="mt-4 sm:text-xl/relaxed">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
-        numquam ea!
-      </p>
+export default function Banner() {
+    const images = [
+        "https://www.sws.co.jp/resource/img/product/048.png",  
+        "https://www.sws.co.jp/resource/img/product/049.png",
+        "https://www.sws.co.jp/resource/img/product/050.png",
+        "https://www.sws.co.jp/resource/img/product/051.png",
+        "https://www.sws.co.jp/resource/img/product/052.png"
+    ];
 
-      <div className="mt-8 flex flex-wrap justify-center gap-4">
-        <a
-          className="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-          href="#"
-        >
-          Get Started
-        </a>
+    const [currentImage, setCurrentImage] = useState(0);
 
-        <a
-          className="block w-full rounded bg-blue-600 px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-          href="#"
-        >
-          Learn More
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-        </>
-    )
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+        }, 5000);  // Change image every 5 seconds
+        return () => clearInterval(interval);
+    }, [images.length]);
+
+    return (
+        <section className="relative h-screen flex">
+            {/* Left div for text */}
+            <div className="flex items-center justify-center w-1/2 bg-white bg-opacity-50">
+                <div className="mx-auto max-w-xl text-left">
+                    <h1 className="text-3xl font-bold sm:text-5xl text-blue-800">
+                        Streamline Your Wiring Solutions.
+                        <strong className="font-bold text-blue-600 block">Enhance Safety and Efficiency.</strong>
+                    </h1>
+                    <p className="mt-4 sm:text-lg text-black">
+                        Discover innovative solutions for your wiring needs, ensuring reliability and performance.
+                    </p>
+                    <div className="mt-8 flex justify-start">
+                        <a className="bg-blue-600 px-6 py-2 text-white rounded hover:bg-blue-700 mr-2" href="#">Get Started</a>
+                        <a className="bg-white px-6 py-2 text-blue-600 border border-blue-600 rounded hover:bg-blue-100" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            {/* Right div for the background image */}
+            <div className="relative w-1/2">
+                <motion.div
+                    key={currentImage}
+                    initial={{ opacity: 0 }} // Start invisible
+                    animate={{ opacity: 1 }}   // Fade in
+                    exit={{ opacity: 0 }}      // Fade out
+                    transition={{ duration: 0.5, ease: "easeInOut" }} // Transition duration
+                    className="absolute w-full h-full inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${images[currentImage]})` }}
+                />
+            </div>
+        </section>
+    );
 }
