@@ -20,26 +20,26 @@ export default function Banner() {
     }, [images.length]);
 
     return (
-        <section className="relative h-screen flex">
+        <section className="relative h-screen flex flex-col md:flex-row">
             {/* Left div for text */}
-            <div className="flex items-center justify-center w-1/2 bg-white bg-opacity-50">
-                <div className="mx-auto max-w-xl text-left">
-                    <h1 className="text-3xl font-bold sm:text-5xl text-blue-800">
+            <div className="flex items-center justify-center w-full md:w-1/2 bg-white bg-opacity-50">
+                <div className="mx-auto max-w-xl text-center md:text-left p-4">
+                    <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl text-blue-800">
                         Streamline Your Wiring Solutions.
                         <strong className="font-bold text-blue-600 block">Enhance Safety and Efficiency.</strong>
                     </h1>
                     <p className="mt-4 sm:text-lg text-black">
                         Discover innovative solutions for your wiring needs, ensuring reliability and performance.
                     </p>
-                    <div className="mt-8 flex justify-start">
-                        <a className="bg-blue-600 px-6 py-2 text-white rounded hover:bg-blue-700 mr-2" href="#">Get Started</a>
+                    <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a className="bg-blue-600 px-6 py-2 text-white rounded hover:bg-blue-700" href="#">Get Started</a>
                         <a className="bg-white px-6 py-2 text-blue-600 border border-blue-600 rounded hover:bg-blue-100" href="#">Learn More</a>
                     </div>
                 </div>
             </div>
             
             {/* Right div for the background image */}
-            <div className="relative w-1/2">
+            <div className="relative w-full md:w-1/2 h-1/2 md:h-full">
                 <motion.div
                     key={currentImage}
                     initial={{ opacity: 0 }} // Start invisible

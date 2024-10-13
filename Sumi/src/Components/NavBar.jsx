@@ -1,43 +1,44 @@
 // NavBar.jsx
 
-import SumiLogo from "../assets/Logo/Sumi Logo.jpg";
+import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link from React Router
+import SumiLogo from '../assets/Logo/Sumi Logo.jpg';
 
 export default function NavBar() {
   const navLinks = [
-    { name: "About", href: "/Page/Careers" }, // Updated to match the routing convention
-    { name: "Careers", href: "#" },
-    { name: "History", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Projects", href: "#" },
-    { name: "Blog", href: "#" },
+    { name: 'Careers', path: '/careers' },  // Update to reflect routing
+    { name: 'History', path: '/history' }
   ];
 
   return (
     <header className="bg-gray-200">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="flex-1 md:flex md:items-center md:gap-12">
-            <a href="#" className="block text-teal-600">
+        <div className="flex flex-col md:flex-row h-16 items-center justify-between md:justify-between">
+          
+          {/* Logo Section */}
+          <div className="flex justify-center md:justify-start flex-1 md:flex md:items-center md:gap-12">
+            <Link to="/" className="block text-teal-600">  {/* Link to home */}
               <span className="sr-only">Home</span>
               <img
                 src={SumiLogo}
                 alt="Logo"
                 className="w-12 h-12 hover:scale-110 transition duration-300"
               />
-            </a>
+            </Link>
           </div>
 
-          <div className="md:flex md:items-center md:gap-12">
+          {/* Navigation Links */}
+          <div className="md:flex md:items-center md:gap-12 mt-4 md:mt-0">
             <nav aria-label="Global">
-              <ul className="flex items-center gap-6 text-sm">
+              <ul className="flex flex-col md:flex-row items-center gap-6 text-sm">
                 {navLinks.map((link) => (
                   <li key={link.name}>
-                    <a
-                      href={link.href}
+                    <Link
+                      to={link.path}  // Use Link to navigate between pages
                       className="text-gray-500 transition hover:text-gray-500/75"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
